@@ -13,7 +13,7 @@
 	},
 	"autoload": {
         "psr-4": {
-            "capdigital\\ntlmsoapclient": "src/"
+            "Capdigital\\NTLMSoapClient\\": "src/"
         }
     }
 }
