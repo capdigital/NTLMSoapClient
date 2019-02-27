@@ -1,7 +1,7 @@
 {
     "name": "capdigital/ntlmsoapclient",
     "description": "NTLM Soap Client",
-    "type": "package",
+    "type": "library",
     "license": "mit",
     "authors": [
         {
