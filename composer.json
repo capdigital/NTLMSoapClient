@@ -1,17 +1,19 @@
 {
     "name": "capdigital/ntlmsoapclient",
     "description": "NTLM Soap Client",
+    "type": "package",
+    "license": "mit",
     "authors": [
         {
             "name": "RICHARD Emmanuel",
             "email": "emmanuel.richard@cap-digital.fr"
         }
     ],
-	"minimum-stability": "dev",
+    "minimum-stability": "dev",
     "require": {
 		"php": ">=5.3.0"
 	},
-	"autoload": {
+    "autoload": {
         "psr-4": {
             "Capdigital\\NTLMSoapClient\\": "src/"
         }
