@@ -1,0 +1,44 @@
+{
+    "name": "capdigital/ntlmsoapclient",
+    "type": "symfony-bundle",
+    "description": "Ntlm Soap",
+    "keywords": [
+        "ntlm",
+        "soap"
+    ],
+    "homepage": "https://github.com/capdigital/NTLMSoapClient",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "RICHARD Emmanuel",
+            "email": "emmanuel.richard@cap-digital.fr"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.10.x-dev"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Capdigital\\NTLMSoapClient\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "ext-mongo": "1.6.16"
+        }
+    }
+}
