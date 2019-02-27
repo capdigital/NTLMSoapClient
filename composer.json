@@ -34,11 +34,5 @@
     "autoload-dev": {
         "psr-4": {
         }
-    },
-    "config": {
-        "sort-packages": true,
-        "platform": {
-            "ext-mongo": "1.6.16"
-        }
     }
 }
