@@ -5,6 +5,13 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class CapdigitalNTLMSoapClient extends Bundle
 {
+    
+    public function build(ContainerBuilder $container)
+    {
+        $container->addCompilerPass(new EasyAdminFormTypePass(), PassConfig::TYPE_BEFORE_REMOVING);
+        $container->addCompilerPass(new EasyAdminConfigPass());
+    }
+    
     /**
      * CapdigitalNTLMSoapClient constructor.
      */
