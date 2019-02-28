@@ -19,6 +19,9 @@
             "dev-develop": "1.5.x-dev"
         }
     },
+    "config": {
+        "sort-packages": true
+    },	
     "autoload": {
         "psr-4": {
             "Capdigital\\NTLMSoapClient\\": "src/"
