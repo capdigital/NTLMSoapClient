@@ -11,7 +11,7 @@ class CapdigitalNTLMSoapClient extends Bundle
      */
     public function __construct()
     {
-            // $baseURL = "";
+            // $baseURL = "url";
         require_once("Class\NTLMStream.php");
 
         require_once("Class\NTLMSoapClient.php");
