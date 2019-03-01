@@ -2,7 +2,7 @@
     "name": "capdigital/ntlmsoapclient",
     "description": "NTLM Soap Client",
     "type": "library",
-    "license": "mit",
+    "license": "LGPL",
     "keywords": ["soap", "ntlm", "webservices"],
     "authors": [
         {
