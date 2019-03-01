@@ -1,6 +1,6 @@
 <?php
 
-namespace Vich\UploaderBundle\DependencyInjection;
+namespace Capdigital\NTLMSoapClient\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
