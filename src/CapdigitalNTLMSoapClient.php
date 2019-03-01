@@ -21,10 +21,12 @@ class CapdigitalNTLMSoapClient extends Bundle
         stream_wrapper_unregister('http');
 
         stream_wrapper_register('http', 'NTLMStream') or die("Failed to register protocol");
+            
+            echo("fin");exit();
 
         $client = new \NTLMSoapClient($baseURL);
             
-            echo("fin");exit();
+            
 
         // Find the first Company in the Companies
         $result = $client->Companies();
