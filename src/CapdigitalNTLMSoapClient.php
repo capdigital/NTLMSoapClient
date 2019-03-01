@@ -6,10 +6,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 class CapdigitalNTLMSoapClient extends Bundle
 {
         
-    /**
-     * CapdigitalNTLMSoapClient constructor.
-     */
-    public function __construct()
+
+    public function connect()
     {
             echo("fin");exit();
             // $baseURL = "url";
