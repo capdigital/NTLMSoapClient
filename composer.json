@@ -4,6 +4,7 @@
     "type": "library",
     "license": "mit",
     "version": "1.0.0",
+    "keywords": ["soap", "ntlm", "webservices"],
     "authors": [
         {
             "name": "RICHARD Emmanuel",
