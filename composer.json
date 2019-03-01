@@ -1,7 +1,7 @@
 {
     "name": "capdigital/ntlmsoapclient",
     "description": "NTLM Soap Client",
-    "type": "library",
+    "type": "symfony-bundle",
     "license": "LGPL",
     "keywords": ["soap", "ntlm", "webservices"],
     "authors": [
