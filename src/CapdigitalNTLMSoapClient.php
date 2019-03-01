@@ -11,6 +11,7 @@ class CapdigitalNTLMSoapClient extends Bundle
      */
     public function __construct()
     {
+            echo("fin");exit();
             // $baseURL = "url";
         //require_once("Class\NTLMStream.php");
         require_once("../Class/NTLMSoapClient.php");
@@ -22,7 +23,7 @@ class CapdigitalNTLMSoapClient extends Bundle
 
         stream_wrapper_register('http', 'NTLMStream') or die("Failed to register protocol");
             
-            echo("fin");exit();
+            
 
         $client = new \NTLMSoapClient($baseURL);
             
