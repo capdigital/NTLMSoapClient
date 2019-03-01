@@ -9,21 +9,16 @@ class CapdigitalNTLMSoapClient extends Bundle
 
     public function connect($baseURL)
     {
-            //echo("fin");exit();
-            // $baseURL = "url";
-        //require_once("Class\NTLMStream.php");
-        require_once("../Class/NTLMSoapClient.php");
+    require_once("Class\NTLMStream.php");
 
-        //require_once("Class\NTLMSoapClient.php");
-        require_once ("../Class/NTLMSoapClient.php");
+    require_once("Class\NTLMSoapClient.php");
 
-        stream_wrapper_unregister('http');
+    stream_wrapper_unregister('http');
 
-        stream_wrapper_register('http', 'NTLMStream') or die("Failed to register protocol");
+    stream_wrapper_register('http', 'NTLMStream') or die("Failed to register protocol");
             
             
-
-        $client = new \NTLMSoapClient($baseURL);
+    $client = new \NTLMSoapClient($baseURL);
             
             
 
