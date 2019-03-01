@@ -3,7 +3,6 @@
     "description": "NTLM Soap Client",
     "type": "library",
     "license": "mit",
-    "version": "1.0.0",
     "keywords": ["soap", "ntlm", "webservices"],
     "authors": [
         {
