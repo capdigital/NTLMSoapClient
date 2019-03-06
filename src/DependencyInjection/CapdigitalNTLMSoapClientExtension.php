@@ -7,7 +7,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class NTLMSoapClientExtension extends Extension
+class CapdigitalNTLMSoapClientExtension extends Extension
 {
 
 /**
@@ -15,10 +15,16 @@ class NTLMSoapClientExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
+        $configuration = $this->getConfiguration($configs, $container);
+        $config = $this->processConfiguration($configuration, $configs);
+        //var_dump($config);die;
+
+
+
         // process bundle's configuration parameters
-        $configs = $this->processConfigFiles($configs);
-        $backendConfig = $this->processConfiguration(new Configuration(), $configs);
-        $container->setParameter('capdigital_ntlm_soap_client', $backendConfig);
+        //$configs = $this->processConfigFiles($configs);
+        //$backendConfig = $this->processConfiguration(new Configuration(), $configs);
+        //$container->setParameter('capdigital_ntlm_soap_client', $backendConfig);
 
         // load bundle's services
         //$loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
@@ -27,4 +33,8 @@ class NTLMSoapClientExtension extends Extension
 
       
     }
+
+
+
+
 }    
