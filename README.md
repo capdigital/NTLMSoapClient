@@ -1,6 +1,11 @@
 # NTLMSoapClient
 
-Installation si symfony-receip ne fonctionne pas :
+<h2>Installation par composer :</h2>
+
+composer require capdigital/ntlmsoapclient
+
+
+<h2>Configuration si symfony-receip ne fonctionne pas :</h2>
 
 1) Activer l'analyse du fichier de configuration en allant dans /config/bundles.php et intégrer la ligne :
 Capdigital\NTLMSoapClient\CapdigitalNTLMSoapClient::class => ['all' => true]
