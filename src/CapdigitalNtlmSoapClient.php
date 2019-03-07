@@ -3,7 +3,7 @@ namespace Capdigital\NtlmSoapClient;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class CapdigitalNTLMSoapClient extends Bundle
+class CapdigitalNtlmSoapClient extends Bundle
 {
         
 
