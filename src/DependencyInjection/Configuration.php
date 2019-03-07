@@ -1,6 +1,6 @@
 <?php
 
-namespace Capdigital\NTLMSoapClient\DependencyInjection;
+namespace Capdigital\NtlmSoapClient\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
