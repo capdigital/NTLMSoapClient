@@ -18,7 +18,7 @@ class CapdigitalNtlmSoapClient extends Bundle
     stream_wrapper_register('http', 'NTLMStream') or die("Failed to register protocol");
             
             
-    $client = new \NTLMSoapClient($baseURL);
+    $client = new \NtlmSoapClient($baseURL);
             
             
 
