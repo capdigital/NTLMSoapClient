@@ -1,5 +1,5 @@
 <?php
-namespace Capdigital\NTLMSoapClient;
+namespace Capdigital\NtlmSoapClient;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
