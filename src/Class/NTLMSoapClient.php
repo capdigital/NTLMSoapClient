@@ -6,12 +6,10 @@
  * Time: 10:22
  */
 
-require_once("NTLMUserID.php");
 
 class NTLMSoapClient extends SoapClient
 {
     function __doRequest($request, $location, $action, $version, $one_way = NULL) {
-        //echo("<br>__doRequest");
 
         $headers = array(
             'Method: POST',
