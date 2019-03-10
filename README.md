@@ -20,34 +20,34 @@ composer require capdigital/ntlmsoapclient
 <br>    password: "PASSWORD"
     
 3) Utilisation du service dans un controller :
-    use Capdigital\NtlmSoapClient\Service\CapdigitalNtlmSoapClient as serviceNtlmSoapClient;
-    class maClass
-    {
-    
-    mafonction(serviceNtlmSoapClient $serviceNtlmSoapClient)
-        {
-        $service = $serviceNtlmSoapClient->connect($wsName, $deleteSociety = true);
-        ou
-        $service = $serviceNtlmSoapClient->connect($wsName);
-        }
-    
-    }
+<br>    use Capdigital\NtlmSoapClient\Service\CapdigitalNtlmSoapClient as serviceNtlmSoapClient;
+<br>    class maClass
+<br>    {
+<br>    
+<br>    mafonction(serviceNtlmSoapClient $serviceNtlmSoapClient)
+<br>        {
+<br>        $service = $serviceNtlmSoapClient->connect($wsName, $deleteSociety = true);
+<br>        ou
+<br>        $service = $serviceNtlmSoapClient->connect($wsName);
+<br>        }
+<br>    
+<br>    }
     
 4) Exemple :
-    mafonction(serviceNtlmSoapClient $serviceNtlmSoapClient)
-        {
-        $service = $serviceNtlmSoapClient->connect('SystemService', $deleteSociety = true);
-        $result = $client->Companies();
-        $companies = $result->return_value;
-        echo "Companies:<br>";
-        if (is_array($companies)) {
-            foreach($companies as $company) {
-                echo "$company<br>";
-            }
-            $cur = $companies[0];
-            }
-            else {
-                echo "$companies<br>";
-                $cur = $companies;
-                }
-        }
+<br>    mafonction(serviceNtlmSoapClient $serviceNtlmSoapClient)
+<br>        {
+<br>        $service = $serviceNtlmSoapClient->connect('SystemService', $deleteSociety = true);
+<br>        $result = $client->Companies();
+<br>        $companies = $result->return_value;
+<br>        echo "Companies:<br>";
+<br>        if (is_array($companies)) {
+<br>            foreach($companies as $company) {
+<br>                echo "$company<br>";
+<br>            }
+<br>            $cur = $companies[0];
+<br>            }
+<br>            else {
+<br>                echo "$companies<br>";
+<br>                $cur = $companies;
+<br>                }
+<br>        }
