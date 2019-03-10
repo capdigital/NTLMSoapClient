@@ -12,7 +12,10 @@ Capdigital\NtlmSoapClient\CapdigitalNTLMSoapClient::class => ['all' => true]
 
 2) Créer le fichier de configuration dans /config/packages/capdigital_ntlm_soap_client.yaml contenant :
 capdigital_ntlm_soap_client:
-    url: "test"
-    user: ""
-    password: ""
+    url: "http://xxx.xxx.xxx.xxx"
+    port: "xxxx"
+    server: "SERVER_NAME"
+    society: "SOCIETY_NAME"
+    user: "DOMAINE\\USER"
+    password: "PASSWORD"
 
