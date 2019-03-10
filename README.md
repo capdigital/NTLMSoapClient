@@ -18,4 +18,36 @@ capdigital_ntlm_soap_client:
     society: "SOCIETY_NAME"
     user: "DOMAINE\\USER"
     password: "PASSWORD"
-
+    
+3) Utilisation du service dans un controller :
+    use Capdigital\NtlmSoapClient\Service\CapdigitalNtlmSoapClient as serviceNtlmSoapClient;
+    class maClass
+    {
+    
+    mafonction(serviceNtlmSoapClient $serviceNtlmSoapClient)
+        {
+        $service = $serviceNtlmSoapClient->connect($wsName, $deleteSociety = true);
+        ou
+        $service = $serviceNtlmSoapClient->connect($wsName);
+        }
+    
+    }
+    
+4) Exemple :
+    mafonction(serviceNtlmSoapClient $serviceNtlmSoapClient)
+        {
+        $service = $serviceNtlmSoapClient->connect('SystemService', $deleteSociety = true);
+        $result = $client->Companies();
+        $companies = $result->return_value;
+        echo "Companies:<br>";
+        if (is_array($companies)) {
+            foreach($companies as $company) {
+                echo "$company<br>";
+            }
+            $cur = $companies[0];
+            }
+            else {
+                echo "$companies<br>";
+                $cur = $companies;
+                }
+        }
