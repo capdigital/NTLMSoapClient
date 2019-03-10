@@ -23,6 +23,9 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
             ->scalarNode('url')->end()
+            ->scalarNode('port')->end()
+            ->scalarNode('server')->end()
+            ->scalarNode('society')->end()
             ->scalarNode('user')->end()
             ->scalarNode('password')->end()
             ->end()
